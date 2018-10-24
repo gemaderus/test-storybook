@@ -4,9 +4,24 @@
 
 // BASE
 
+@import 'base/base';
 // ATOMS
 
 @import 'atoms/icons';
 @import 'atoms/buttons';
+@import 'atoms/logo';
+@import 'atoms/item';
 
 // MOLECULES
+
+@import 'molecules/main';
+
+// ORGANISMS
+
+@import 'organisms/header';
+@import 'organisms/footer';
+@import 'organisms/navigation';
+
+// PAGES
+
+@import 'pages/home';

@@ -19,7 +19,7 @@ import { withSmartKnobs } from 'storybook-addon-smart-knobs'
 // 	)
 // })
 
-const req = require.context('../src/', true, /.stories.js$/)
+const req = require.context('./stories', true, /\.js$/)
 
 addDecorator(withSmartKnobs)
 addDecorator(withKnobs)
