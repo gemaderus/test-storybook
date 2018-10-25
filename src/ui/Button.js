@@ -1,11 +1,15 @@
 import React from 'react';
 
-const Button = () => {
+const Button = ({ openMenu }) => {
   return(
-    <button className="button button--hamburger">
-      <span></span>
-      <span></span>
-      <span></span>
+    <button className="button button--hamburger open" onClick={() => {
+      openMenu()
+    }}>
+        <div>
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
     </button>
   )
 }

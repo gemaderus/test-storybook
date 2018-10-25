@@ -1,9 +1,30 @@
-.navigation {
+.nav {
   display: none;
+  font-weight: 600;
 }
 
 @media screen and (min-width: 768px) {
-  .navigation {
+  .nav {
+    display: block;
+
+    a {
+      color: $white;
+    }
+  }
+
+  .nav__list {
     display: flex;
+  }
+
+  .nav__list__item {
+    margin-right: 6.250em;
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+
+  .nav__list__item {
+    margin-bottom: 0;
   }
 }

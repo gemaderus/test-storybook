@@ -2,19 +2,19 @@ import React from 'react';
 
 const Navigation = () => {
   return(
-    <nav>
-      <ul className="navigation">
-        <li>
-          <a href="#">About</a>
+    <nav className="nav">
+      <ul className="nav__list">
+        <li className="nav__list__item">
+          <a href="https://redradix.com/agency/" className="link">About</a>
         </li>
-        <li>
-          <a href="#">Clients</a>
+        <li className="nav__list__item">
+          <a href="https://redradix.com/agency/clients/" className="link">Clients</a>
         </li>
-        <li>
-          <a href="#">Work</a>
+        <li className="nav__list__item">
+          <a href="https://redradix.com/agency/trabajos/" className="link">Work</a>
         </li>
-        <li>
-          <a href="#">Contact</a>
+        <li className="nav__list__item">
+          <a href="https://redradix.com/agency/contacto/" className="link">Contact</a>
         </li>
       </ul>
     </nav>
