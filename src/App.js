@@ -1,9 +1,9 @@
 import React, { Component } from 'react'
-import Header from './ui/Header';
-import Main from './ui/Main';
-import Footer from './ui/Footer';
-import Data from './ui/Data';
-import Aside from './ui/Aside';
+import Header from './ui/Header/Header';
+import Main from './ui/Main/Main';
+import Footer from './ui/Footer/Footer';
+import Data from './ui/Data/Data';
+import Aside from './ui/Aside/Aside';
 
 import './styles/styles.css'
 
@@ -13,18 +13,18 @@ class App extends Component {
   }
 
   openMenu = () => {
+    const {open} = this.state
     this.setState({
-      open: true
+      open: !open
     })
   }
 
   render() {
     const { open } = this.state;
-    const opened = open;
-    const css = opened ? 'home open--menu' : 'home';
+    const css = open ? 'home menu--open' : 'home';
 
     return (
-      <div className={css} opened={opened}>
+      <div className={css}>
         <Aside />
         <div className="content">
           <Header openMenu={this.openMenu} />

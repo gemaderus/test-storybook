@@ -1,5 +1,7 @@
-.main-flex {
+.main--flex {
   padding: 18px 12px;
+  overflow: auto;
+  flex: 1;
 }
 
 @media screen and (min-width: 768px) {
@@ -8,8 +10,7 @@
     flex-wrap: wrap;
   }
 
-  .main-flex {
-    flex: 1;
+  .main--flex {
     padding: 24px;
   }
 }

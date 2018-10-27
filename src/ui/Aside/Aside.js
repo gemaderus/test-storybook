@@ -1,10 +1,9 @@
 import React from 'react';
 
-const Aside = ({ opened }) => {
-  const css = opened ? 'aside is-open' : 'aside';
+const Aside = () => {
 
   return (
-    <nav className={css}>
+    <nav className="aside">
       <div className="logo__holder">
         <a href="https://redradix.com" className="logo">Logo</a>
       </div>

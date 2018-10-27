@@ -10,7 +10,7 @@ a {
     display: inline-block;
     width: 0;
     height: 1px;
-    background-color: $white;
+    background-color: currentColor;
     transition: width 0.5s ease;
     position: absolute;
     bottom: -1px;

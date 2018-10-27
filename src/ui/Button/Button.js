@@ -1,8 +1,10 @@
 import React from 'react';
 
-const Button = ({ openMenu }) => {
+const Button = ({ openMenu, className }) => {
+  const css = className ? `button button--hamburger ${className}` : 'button button--hamburger';
+
   return(
-    <button className="button button--hamburger open" onClick={() => {
+    <button className={css} onClick={() => {
       openMenu()
     }}>
         <div>

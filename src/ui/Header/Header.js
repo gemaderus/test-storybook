@@ -1,6 +1,6 @@
-import React, { Component } from 'react';
-import Navigation from './Navigation';
-import Button from './Button';
+import React from 'react';
+import Navigation from '../Navigation/Navigation';
+import Button from '../Button/Button';
 
 const Header = ({ openMenu }) => {
   return (

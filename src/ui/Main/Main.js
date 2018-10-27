@@ -1,9 +1,9 @@
 import React from 'react';
-import Box from './Box';
+import Box from '../Box/Box';
 
 const MainContent = ({data}) => {
   return(
-    <div className="main-flex">
+    <div className="main--flex">
       <ul className="main grid">
         {data.map((item, index) => {
           return <Box key={item.text} item={item} index={index}/>
