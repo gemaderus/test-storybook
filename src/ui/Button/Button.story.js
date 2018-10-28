@@ -7,10 +7,18 @@ import Button from './Button';
 const stories = storiesOf('Button', module);
 
 stories.add(
-  'Basic Content',
+  'Button Hamburger',
 
   withInfo('')(() => (
     <div className="button--container">
+      <Button />
+    </div>
+  ))
+).add(
+  'Button Hamburger opened',
+
+  withInfo('')(() => (
+    <div className="button--container menu--open">
       <Button />
     </div>
   ))

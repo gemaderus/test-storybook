@@ -11,3 +11,8 @@ body {
 .container--navigation {
   padding-left: 16px;
 }
+
+.aside--container .aside {
+  position: relative;
+}
+

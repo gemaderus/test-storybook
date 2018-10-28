@@ -6,9 +6,12 @@ import Aside from './Aside';
 
 const stories = storiesOf('Aside', module);
 
-storiesOf('Aside', module)
-  .add('Basic Aside Mobile', (item, index) => (
-    <div className="menu--open">
-      <Aside />
+stories.add(
+  'Basic Aside Mobile',
+
+  withInfo('')((item, index) => (
+    <div className="menu--open aside--container">
+      <Aside item={item} index={index} />
     </div>
   ))
+);
