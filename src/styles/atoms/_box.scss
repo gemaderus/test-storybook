@@ -18,6 +18,10 @@
     height: 240px;
     width: calc(50% - 7px);
     margin-bottom: 14px;
+
+    &:nth-last-child(-n+2) {
+      margin-bottom: 0;
+    }
   }
 }
 
@@ -25,5 +29,9 @@
   .box {
     width: calc(33.3333% - 12px);
     margin-bottom: 16px;
+
+    &:nth-last-child(-n+3) {
+      margin-bottom: 0;
+    }
   }
 }

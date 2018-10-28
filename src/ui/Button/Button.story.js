@@ -4,9 +4,14 @@ import { withInfo } from '@storybook/addon-info';
 
 import Button from './Button';
 
-const stories = storiesOf('Footer', module);
+const stories = storiesOf('Button', module);
 
-storiesOf('Button', module)
-  .add('Button', () => (
-    <Button />
-  ));
+stories.add(
+  'Basic Content',
+
+  withInfo('')(() => (
+    <div className="button--container">
+      <Button />
+    </div>
+  ))
+);
