@@ -16,12 +16,14 @@
 @media screen and (min-width: 768px) {
   .box {
     height: 240px;
-    grid-column-start: span 6;
+    width: calc(50% - 7px);
+    margin-bottom: 14px;
   }
 }
 
 @media screen and (min-width: 992px) {
   .box {
-    grid-column-start: span 4;
+    width: calc(33.3333% - 12px);
+    margin-bottom: 16px;
   }
 }

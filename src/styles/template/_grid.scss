@@ -1,9 +1,13 @@
 @media screen and (min-width: 768px) {
   .grid {
-    display: grid;
+    display: flex;
     max-width: 1234px;
-    grid-gap: 20px 14px;
-    grid-template-columns: repeat(12, 1fr);
+    justify-content: space-between;
     margin: 0 auto;
+  }
+
+  .grid::after{
+    content: '';
+    width: calc(33.3333% - 14px); // Same width of .grid__element
   }
 }
