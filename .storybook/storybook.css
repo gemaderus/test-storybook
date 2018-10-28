@@ -2,3 +2,12 @@ body {
   background-color: #e7e7e7;
   padding: 1rem 0;
 }
+
+.navigation--container .nav{
+  padding-left: 16px;
+}
+
+.button--container .button{
+  position: relative;
+  display: block;
+}

@@ -10,6 +10,8 @@ stories.add(
   'Basic Navigation',
 
   withInfo('')(() => (
-    <Navigation />
+    <div className="navigation--container">
+      <Navigation />
+    </div>  
   ))
 );
