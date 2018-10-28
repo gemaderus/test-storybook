@@ -9,7 +9,7 @@ const stories = storiesOf('Box', module);
 stories.add(
   'Basic Content',
 
-  withInfo('')((item, index) => (
-    <Box item={item} index={index}/>
+  withInfo('')((item) => (
+    <Box item={item} />
   ))
 );
